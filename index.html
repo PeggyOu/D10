@@ -6,19 +6,17 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <main>
-        <div class="">
-            <h1>Text Editor</h1>
-        </div>
-        <div class="">
-            <button onclick="document.getElementById('input').style.fontWeight ='bold'">Bold</button>
-            <button onclick="document.getElementById('input').style.fontStyle ='italic'">Italic</button>
-            <button>left</button>
-            <button>center</button>
-            <button>right</button>
-            <button>Upper Case</button>
-            <button>Lower Case</button>
-            <button>Capitalize</button>
-            <button>Clear Text</button>
+        <h1>Text Editor</h1>
+        <div>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.fontWeight ='bold'">Bold</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.fontStyle ='italic'">Italic</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='left'">left</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='center'">center</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='right'">right</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='uppercase'">Upper Case</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='lowercase'">Lower Case</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='capitalize'">Capitalize</button>
+            <button class="rounded text-slate-500 border-2 border-violet-700 px-2 py-4" onclick="document.getElementById('input').value = ''">Clear Text</button>
         </div>
         <textarea id="input"></textarea>
     </main>
