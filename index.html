@@ -6,20 +6,20 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <main>
-        <h1 class="text-6xl text-violet-400 mx-auto w-1/2 text-center">Text Editor</h1><br>
-        <div class="mx-auto w-1/2 text-center py-2 px-2">
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.fontWeight ='bold'">Bold</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.fontStyle ='italic'">Italic</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='left'">left</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='center'">center</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textAlign ='right'">right</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='uppercase'">Upper Case</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='lowercase'">Lower Case</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').style.textTransform ='capitalize'">Capitalize</button>
-            <button class="rounded text-slate-500 border-2 border-violet-300 px-2 py-4" onclick="document.getElementById('input').value = ''">Clear Text</button>
+        <h1 class="text-6xl text-violet-400 mx-auto w-50 text-center py-4">Text Editor</h1><br><br>
+        <div class="mx-auto w-9/12 grid grid-cols-9 gap-6 text-center justify-between">
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.fontWeight ='bold'">Bold</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.fontStyle ='italic'">Italic</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textAlign ='left'">left</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textAlign ='center'">center</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textAlign ='right'">right</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textTransform ='uppercase'">Upper Case</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textTransform ='lowercase'">Lower Case</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').style.textTransform ='capitalize'">Capitalize</button>
+            <button class="rounded text-slate-500 border-2 border-violet-300 shadow-md py-2" onclick="document.getElementById('input').value = ''">Clear Text</button>
         </div>
-        <div class="mx-auto w-1/2"><br>
-            <textarea class="border-4 border-violet-300 w-full h-96 px-2 py-2 text-slate-500" id="input">Your text here</textarea>
+        <div class="mx-auto w-1/2"><br><br>
+            <textarea class="shadow-md border-4 border-violet-300 w-full h-96 px-2 py-5 text-slate-500" id="input">Your text here</textarea>
         </div>
         
     </main>
